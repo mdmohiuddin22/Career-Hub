@@ -4,14 +4,15 @@ import Header from '../Header/Header';
 import Banner from '../Banner/Banner';
 import JobCategoryList from '../JobCategoryList/JobCategoryList';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
+import AppliedJobs from '../AppliedJobs/AppliedJobs';
 
 const Statistics = () => {
     return (
         <div>
             <Header></Header>
             <Banner></Banner>
-            <Outlet></Outlet>
             <FeaturedJobs></FeaturedJobs>
+            <Outlet></Outlet>
             
         </div>
     );

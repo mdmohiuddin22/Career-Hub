@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import About from './components/Applied Jobs/Applied Jobs';
+import About from './components/AppliedJobs/AppliedJobs';
 import Contact from './components/Star Applying/StartApplying';
 import ErrorPage from './error-page';
 import { Root } from 'postcss';
