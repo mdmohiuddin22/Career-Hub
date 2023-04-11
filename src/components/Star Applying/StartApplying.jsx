@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StarApplying = () => {
+const StartApplying = () => {
     return (
         <div>
             <h3>This is the real Contant page</h3>
@@ -8,4 +8,4 @@ const StarApplying = () => {
     );
 };
 
-export default StarApplying;
+export default StartApplying;

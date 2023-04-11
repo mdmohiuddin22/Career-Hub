@@ -7,10 +7,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import About from './components/Applied Jobs/Applied Jobs';
-import Contact from './components/Star Applying/StarApplying';
+import Contact from './components/Star Applying/StartApplying';
 import ErrorPage from './error-page';
 import { Root } from 'postcss';
 import Home from './components/Statistics/Statistics';
+import Banner from './components/Banner/Banner';
+import JobCategoryList from './components/JobCategoryList/JobCategoryList';
+import Statistics from './components/Statistics/Statistics';
 // const router = createBrowserRouter([
 //   {
 //     path:'/',
@@ -33,16 +36,29 @@ import Home from './components/Statistics/Statistics';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home></Home>,
+    element: <Statistics></Statistics>,
+    
     children:[
+//       {
+// path:'/',
+// element: <Banner></Banner>
+//       },
+//       {
+        
+// path:'/',
+// element:<JobCategoryList></JobCategoryList>
+//       },
       {
         path: 'about',
-        element:<About></About>
+        element:<About></About>,
+        loader: () =>fetch('jobCategoryList.json')
+        
       },
       {
         path:'contact',
         element: <Contact></Contact>
-      }
+      },
+     
     ]
   }
 ])
