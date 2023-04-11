@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contact = () => {
+const StarApplying = () => {
     return (
         <div>
             <h3>This is the real Contant page</h3>
@@ -8,4 +8,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default StarApplying;

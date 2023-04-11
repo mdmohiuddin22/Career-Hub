@@ -6,11 +6,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+import About from './components/Applied Jobs/Applied Jobs';
+import Contact from './components/Star Applying/StarApplying';
 import ErrorPage from './error-page';
 import { Root } from 'postcss';
-import Home from './components/Home/Home';
+import Home from './components/Statistics/Statistics';
 // const router = createBrowserRouter([
 //   {
 //     path:'/',
