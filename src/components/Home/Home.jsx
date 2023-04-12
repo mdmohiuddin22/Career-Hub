@@ -12,9 +12,8 @@ const Statistics = () => {
             <Header></Header>
             <Banner></Banner>
             <JobCategoryList></JobCategoryList>
-            <FeaturedJobs></FeaturedJobs>
             <Outlet></Outlet>
-            
+            <FeaturedJobs></FeaturedJobs>
         </div>
     );
 };

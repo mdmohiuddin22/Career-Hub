@@ -10,10 +10,10 @@ import About from './components/JobCategoryList/JobCategoryList';
 import Contact from './components/Star Applying/StartApplying';
 import ErrorPage from './error-page';
 import { Root } from 'postcss';
-import Home from './components/Statistics/Statistics';
+import Home from './components/Home/Home';
 import Banner from './components/Banner/Banner';
 import JobCategoryList from './components/JTL/JTL';
-import Statistics from './components/Statistics/Statistics';
+import Statistics from './components/Home/Home';
 import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs';
 // const router = createBrowserRouter([
 //   {
