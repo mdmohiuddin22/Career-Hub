@@ -6,7 +6,8 @@ import JobCategoryList from '../JTL/JTL';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 import AppliedJobs from '../JobCategoryList/JobCategoryList';
 
-const Statistics = () => {
+
+const Home = () => {
     return (
         <div>
             <Header></Header>
@@ -14,8 +15,11 @@ const Statistics = () => {
             <JobCategoryList></JobCategoryList>
             <Outlet></Outlet>
             <FeaturedJobs></FeaturedJobs>
+            
+    
+
         </div>
     );
 };
 
-export default Statistics;
+export default Home;

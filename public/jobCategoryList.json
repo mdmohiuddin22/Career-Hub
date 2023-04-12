@@ -8,19 +8,19 @@
     },
     {
         "id": 2,
-        "category_logo":"../src/assets/Icons/business1.png",
+        "category_logo":"https://i.postimg.cc/j5LXY741/business1.png",
         "category_name":"Creative Design",
         "jobs_available":"150 Jobs Available"
     },
     {
         "id": 3,
-        "category_logo":"../src/assets/Icons/social-media1.png",
+        "category_logo":"https://i.postimg.cc/CLYczzhR/social-media1.png",
         "category_name":"Marketing & Sales",
         "jobs_available":"200 Jobs Available"
     },
     {
         "id": 4,
-        "category_logo":"../src/assets/Icons/chip1.png",
+        "category_logo":"https://i.postimg.cc/1XK4WWN1/chip1.png",
         "category_name":"Engineering Job",
         "jobs_available":"50 Jobs Available"
     }

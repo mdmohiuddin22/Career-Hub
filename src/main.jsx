@@ -15,6 +15,7 @@ import Banner from './components/Banner/Banner';
 import JobCategoryList from './components/JTL/JTL';
 import Statistics from './components/Home/Home';
 import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs';
+import Statatistic from './components/Statatistic/Statatistic';
 // const router = createBrowserRouter([
 //   {
 //     path:'/',
@@ -57,14 +58,20 @@ const router = createBrowserRouter([
         path: '/',
         element:<About></About>,
         loader: () =>fetch('jobCategoryList.json'),
-        
-        
+      },
+      {
+path:'/',
+element:<FeaturedJobs></FeaturedJobs>
       },
       {
         path:'contact',
         element: <Contact></Contact>,
      
       },
+    {
+      path:'/statatistic',
+      element:<Statatistic></Statatistic>
+    }
      
     ]
   }
