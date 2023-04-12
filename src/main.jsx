@@ -6,13 +6,13 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import About from './components/AppliedJobs/AppliedJobs';
+import About from './components/JobCategoryList/JobCategoryList';
 import Contact from './components/Star Applying/StartApplying';
 import ErrorPage from './error-page';
 import { Root } from 'postcss';
 import Home from './components/Statistics/Statistics';
 import Banner from './components/Banner/Banner';
-import JobCategoryList from './components/JobCategoryList/JobCategoryList';
+import JobCategoryList from './components/JTL/JTL';
 import Statistics from './components/Statistics/Statistics';
 import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs';
 // const router = createBrowserRouter([
@@ -41,6 +41,7 @@ const router = createBrowserRouter([
     element: <Home></Home>,
     
     
+    
     children:[
 //       {
 // path:'/',
@@ -55,16 +56,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element:<About></About>,
-        loader: () =>fetch('jobCategoryList.json')
+        loader: () =>fetch('jobCategoryList.json'),
+        
         
       },
       {
-        path:'/',
-        element:<FeaturedJobs></FeaturedJobs>
-        },
-      {
         path:'contact',
-        element: <Contact></Contact>
+        element: <Contact></Contact>,
+     
       },
      
     ]
