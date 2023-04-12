@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "category_logo":"../src/assets/Icons/accounts1.png",
+       
+        "category_logo":"https://www.linkpicture.com/q/accounts1.png",
         "category_name":"Account & Finance",
         "jobs_available":"100 Jobs Available"
     },
