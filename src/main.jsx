@@ -14,8 +14,9 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Blog from './components/Blog/Blog';
 import StartApplying from './components/Star Applying/StartApplying';
 import Main from './components/LayOut/Main';
-import JobCategoryList from './components/JobCategoryList/JobCategoryList';
+// import JobCategoryList from './components/JobCategoryList/JobCategoryList';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
+import JobCategoryList1 from './components/AppliedJobs/JobCategoryList1/JobCategoryList1';
 
 
 const router = createBrowserRouter([
@@ -29,11 +30,23 @@ const router = createBrowserRouter([
       {
         path: '/',
          element:<Main/>},
-      {
-         path:'/jobcategory', 
-      element:<JobCategoryList/>,
-      loader: () =>fetch('/jobCategoryList.json')
-    },
+    //   {
+    //      path:'/jobcategory', 
+    //   element:<JobCategoryList/>,
+    //   loader: () =>fetch('/jobCategoryList.json')
+    // },
+
+//     {
+// path:'/jobcategory1',
+// element:<JobCategoryList1></JobCategoryList1>,
+// loader:() => fetch('/jobCategoryList.json')
+
+//     },
+//     {
+// path:'featuredjobs',
+// element:<FeaturedJobs/>,
+// loader: () => fetch('/featuredJobs.json')
+//     },
     
      { path:'/statatistic',
       element:<Statatistic/>},

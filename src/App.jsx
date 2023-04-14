@@ -12,10 +12,10 @@ function App() {
 
   return (
     <div>
-   <Header/>
- <div className='min-h-[calc(100vh-137px)]'>
- <Outlet/>
- </div>
+      <Header />
+      <div className='min-h-[calc(100vh-137px)]'>
+        <Outlet />
+      </div>
     </div>
   )
 }
