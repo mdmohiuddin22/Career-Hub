@@ -4,7 +4,7 @@ import ViewDetailsShow from '../ViewDetailsShow/ViewDetailsShow';
 
 const ViewDetails = () => {
     const viewdetails = useLoaderData();
-    console.log(viewdetails.id);
+    // console.log(viewdetails.id);
     return (
         <div>
             <h3 className='text-4xl font-bold text-center mt-10'>Job Details</h3> <h3 className='text-end mr-10'>Job Details</h3>
