@@ -6,10 +6,12 @@ const ViewDetailsShow = ({viewdetail}) => {
     }=viewdetail;
 
     return (
-        <div>
-           <h1>{id}</h1>
-           <p> Job Description:  {job_description}</p>
+        <div className='flex space-between'>
+          
+           <div className='w-72'> <p> Job Description:  {job_description}</p></div>
+           <div><h1 className='ml-96'> Job Details</h1></div>
         </div>
+       
     );
 };
 

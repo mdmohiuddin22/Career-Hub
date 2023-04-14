@@ -4,11 +4,11 @@ import ViewDetailsShow from '../ViewDetailsShow/ViewDetailsShow';
 
 const ViewDetails = () => {
     const viewdetails = useLoaderData();
-    console.log(viewdetails);
+    console.log(viewdetails.id);
     return (
         <div>
-            <h3>All Jobs Data:{viewdetails.length}</h3>
-            <div>
+            <h3 className='text-4xl font-bold text-center mt-10'>Job Details</h3> <h3 className='text-end mr-10'>Job Details</h3>
+            <div className='m-10'>
             {
                 viewdetails.map(viewdetail=> <ViewDetailsShow
                 key={viewdetail.id}
