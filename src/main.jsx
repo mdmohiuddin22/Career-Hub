@@ -6,68 +6,46 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import About from './components/JobCategoryList/JobCategoryList';
-import Contact from './components/Star Applying/StartApplying';
 import { Root } from 'postcss';
-import Home from './components/Home/Home';
 import Banner from './components/Banner/Banner';
-import JobCategoryList from './components/JTL/JTL';
-import Statistics from './components/Home/Home';
 import FeaturedJobs from './components/FeaturedJobs/FeaturedJobs';
 import Statatistic from './components/Statatistic/Statatistic';
-import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Blog from './components/Blog/Blog';
+import StartApplying from './components/Star Applying/StartApplying';
+import Main from './components/LayOut/Main';
+import JobCategoryList from './components/JobCategoryList/JobCategoryList';
+import AppliedJobs from './components/AppliedJobs/AppliedJobs';
+
 
 const router = createBrowserRouter([
-//   {
+  
     
-//     path: '/',
-//     element: <Home></Home>,
-    
-    
-    
-//     children:[
-
-//       {
-//         path: '/',
-//         element:<About></About>,
-//         loader: () =>fetch('jobCategoryList.json'),
-//       },
-//       {
-// path:'/',
-// element:<FeaturedJobs></FeaturedJobs>
-//       },
-//       {
-//         path:'contact',
-//         element: <Contact></Contact>,
-     
-//       },
-//     {
-//       path:'/statatistic',
-//       element:<Statatistic></Statatistic>
-//     }
-     
-//     ]
-//   }
 {
   path:'/',
   element:<App/>,
   errorElement:<ErrorPage/>,
   children:[
-    {
-      path:'/',
-      element:<Banner/>
+      {
+        path: '/',
+         element:<Main/>},
+      {
+         path:'/jobcategory', 
+      element:<JobCategoryList/>,
+      loader: () =>fetch('/jobCategoryList.json')
     },
-    {
-      path:'/statatistic',
-      element:<Statatistic/>
-    }
+    
+     { path:'/statatistic',
+      element:<Statatistic/>},
+     { path:'/startApplying',
+      element:<StartApplying/>},
+     { path:'/blog',
+      element:<Blog/>},
+     { path:'/appliedJobs',
+      element:<AppliedJobs/>},
   ]
 }
-
 ])
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <RouterProvider router={router} />
