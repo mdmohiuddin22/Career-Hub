@@ -1,7 +1,6 @@
 import React from 'react';
 
 const JobCategoryList2 = ({jobcategory}) => {
-    console.log(jobcategory)
     const {id,category_logo,category_name,jobs_available}=jobcategory;
     return (
         <div>

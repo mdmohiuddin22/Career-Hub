@@ -18,6 +18,7 @@ import Main from './components/LayOut/Main';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import JobCategoryList1 from './components/AppliedJobs/JobCategoryList1/JobCategoryList1';
 import SeeAllJobs from './components/SeeAllJobs/SeeAllJobs';
+import ViewDetails from './components/ViewDetails/ViewDetails';
 
 
 const router = createBrowserRouter([
@@ -60,6 +61,12 @@ const router = createBrowserRouter([
       {
         path:'/seealljobs',
         element:<SeeAllJobs></SeeAllJobs>
+      },
+      {
+        path:'/viewdetails',
+        element:<ViewDetails></ViewDetails>,
+        loader: () => fetch('featuredJobs.json')
+
       }
   ]
 }
