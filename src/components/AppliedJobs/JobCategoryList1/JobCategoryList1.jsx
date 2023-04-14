@@ -13,7 +13,7 @@ useEffect(()=> {
     return (
         <div>
           <h1 className='text-center text-[#1A1919] text-4xl font-bold'>Job Category List</h1>
-//            <h4 className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</h4>
+          <h4 className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</h4>
       <div className='flex justify-between ml-10 mr-10 mb-10'>
         {
            jobcategorys.map(jobcategory => <JobCategoryList2

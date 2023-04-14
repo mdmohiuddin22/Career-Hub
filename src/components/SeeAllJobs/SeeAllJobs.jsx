@@ -1,3 +1,14 @@
+// import React from 'react';
+
+// const SeeAllJobs = () => {
+//     return (
+//         <div>
+          
+//         </div>
+//     );
+// };
+
+// export default SeeAllJobs;
 import React, { useEffect, useState } from 'react';
 import { Link, Outlet, useLoaderData } from 'react-router-dom';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
@@ -5,7 +16,7 @@ import FeaturedJob from '../FeaturedJob/FeaturedJob';
 const FeaturedJobs = () => {
 const [features, setFeatures]=useState([]);
 useEffect(()=> {
-  fetch('featuredJobs.json')
+  fetch('seealljobs.json')
   .then(res => res.json())
   .then(data =>setFeatures(data))
 },[]);
@@ -22,7 +33,7 @@ useEffect(()=> {
           )
         }
 
-<Link to="/seealljobs"><button className="btn btn-active btn-secondary ml-72">See All Jobs</button> </Link>
+{/* <Link to="/seealljobs"><button className="btn btn-active btn-secondary ml-72">See All Jobs</button> </Link> */}
       </div>
         </div>
     );

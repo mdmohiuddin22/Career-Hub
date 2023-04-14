@@ -69,9 +69,43 @@
       "phone": "123-456-7890",
       "email": "jobs@example.com"
     }
+  },
+  {
+    "id": 5,
+    "company_logo": "https://i.postimg.cc/bJpZQcs9/google-1-1-1.png",
+    "job_title": "Software Engineer",
+    "company_name": "Google LLC.",
+    "remote_or_onsite": ["Onsite", "Remote"],
+    "location": "Dhaka, Bangladesh",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "job_description": "Example Inc. is looking for a software engineer to join our team. The ideal candidate has experience with Java and Python and is familiar with cloud technologies such as AWS or GCP.",
+    "job_responsibility": "Responsibilities:\n- Design, develop and maintain software applications\n- Collaborate with cross-functional teams to identify and solve complex problems\n- Write clean, efficient and maintainable code\n- Contribute to code reviews and ensure high code quality standards\n- Continuously improve software development processes",
+    "educational_requirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of professional experience in software engineering",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@example.com"
+    }
+  },
+  {
+    "id": 6,
+    "company_logo": "https://i.postimg.cc/x87jpWT7/netflix-4-1.png",
+    "job_title": "Software Engineer",
+    "company_name": "Google LLC.",
+    "remote_or_onsite": ["Onsite", "Remote"],
+    "location": "Dhaka, Bangladesh",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "job_description": "Example Inc. is looking for a software engineer to join our team. The ideal candidate has experience with Java and Python and is familiar with cloud technologies such as AWS or GCP.",
+    "job_responsibility": "Responsibilities:\n- Design, develop and maintain software applications\n- Collaborate with cross-functional teams to identify and solve complex problems\n- Write clean, efficient and maintainable code\n- Contribute to code reviews and ensure high code quality standards\n- Continuously improve software development processes",
+    "educational_requirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of professional experience in software engineering",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@example.com"
+    }
   }
-  
- 
 ]
       
    
